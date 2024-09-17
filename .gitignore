@@ -11,7 +11,7 @@ media/
 staticfiles/
 
 # Environment variables
-./config/.env
+.env
 
 # Docker
 docker-compose.override.yml
