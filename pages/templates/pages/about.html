@@ -1,0 +1,340 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>A propos</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'pages/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/css/vendor.css' %}">
+
+    <style type="text/css" media="screen">
+        .s-styles { 
+            background-color: var(--color-bg);
+            padding-top: calc(6.5 * var(--space));
+            padding-bottom: calc(4.5 * var(--space));
+            position: relative;
+        }
+        .s-styles .intro h1 {
+            margin-top: 0;
+        }
+    </style>
+
+    <!-- script
+    ================================================== -->
+    <script defer src="{% static 'pages/js/fontawesome/all.min.js' %}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'pages/images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'pages/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'pages/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'pages/js/site.webmanifest' %}">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header" style="position: fixed; background-color: white; top: 0;">
+
+        <div class="s-header__logo">
+            <a class="rubik-scribble-regular" href="#">VINMARTECH</a>
+
+        </div>
+
+        <div class="s-header__content">
+    
+            <nav class="s-header__nav-wrap">
+                <ul class="s-header__nav brand-version-2">
+                    <li><a href="{% url 'pages:home' %}" title="Intro">Accueil</a></li>
+                    <li><a href="{% url 'pages:about' %}" title="About">Qui sommes-nous?</a></li>
+                    <li><a href="{% url 'pages:team' %}" title="Services">Team</a></li>
+                    <li><a href="{% url 'pages:contact' %}" title="Works">Contact</a></li>
+                </ul>
+            </nav> <!-- end s-header__nav-wrap -->
+
+            <a href="{% url 'pages:contact' %}" class="btn btn--primary btn--small">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+                Parlons!
+            </a>
+
+        </div> <!-- end header-content -->
+
+        <a class="s-header__menu-toggle" href="#0" style="background-color: #dd4b39; border-radius: 5%;"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+
+
+    <!-- s-styles
+    ================================================== -->
+    <section id="styles" class="s-styles">
+
+        <div class="row">
+
+            <div class="column large-12 intro about-landing-section">
+
+                <h1>Digitalisez vos offres.</h1>
+
+                <p class="lead">Lorem ipsum Officia elit ad tempor dolore est ex incididunt incididunt occaecat culpa deserunt 
+                sunt labore in cillum ullamco magna in Excepteur consequat in reprehenderit proident mollit incididunt officia commodo.
+                Duis ea officia sed dolor pariatur enim dolore dolore quis incididunt nulla exercitation commodo veniam et ea incididunt.
+                </p>
+
+                <img src="{% static 'pages/images/image5.png' %}" alt="images" data-aos="fade-up" >
+
+                <hr style="color: #dd4b39;" class="fancy">
+
+            </div>
+
+        </div> <!-- end row -->
+        <div class="row">
+
+            <div class="large-12 column">
+               <h3 class="h-add-bottom" style="font-weight: bolder;">Notre expertise</h3>
+            </div>
+   
+        </div> <!-- Row End-->
+
+
+        <div class="row">
+   
+            <div class="large-4 mob-12 column">
+                <h5>Application mobile</h5>
+                <p>
+                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                faucibus at, tincidunt eget, porttitor non, dolor. 
+                </p>
+             </div>
+   
+            <div class="large-4 mob-12 column">
+                <h5>Application web</h5>
+                <p>
+                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                faucibus at, tincidunt eget, porttitor non, dolor. 
+                </p>
+            </div>
+   
+            <div class="large-4 mob-12 column">
+                <h5>Numérisation de dossiers</h5>
+                <p>
+                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                faucibus at, tincidunt eget, porttitor non, dolor. 
+                </p>
+            </div>
+   
+        </div>
+   
+        <div class="row">
+   
+            <div class="large-4 tab-6 mob-12 column">
+                <h5>Site e-commerce</h5>
+                <p>
+                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                faucibus at, tincidunt eget, porttitor non, dolor. 
+                </p>
+            </div>
+   
+            <div class="large-4 tab-6 mob-12 column">
+                <h5>Site vitrine</h5>
+                <p>
+                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                faucibus at, tincidunt eget, porttitor non, dolor. 
+                </p>
+            </div>
+   
+            <div class="large-4 tab-6 mob-12 column">
+                <h5>Site institutionnel</h5>
+                <p>
+                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                faucibus at, tincidunt eget, porttitor non, dolor. 
+                </p>
+            </div>  
+        </div>
+   
+
+
+
+
+
+
+    </section> <!-- end s-styles -->
+
+
+
+    <!-- footer
+    ================================================== -->
+    <section >
+        <!-- Footer -->
+        <footer style="background-color: hsla(345, 93%, 44%, 1); color: white;">
+            <!--Grid row-->
+            <div class="column">
+                <!--Grid column-->
+                <div class="row">
+                        <div class="column large-4 w-900-stack">
+                            <h5 class="text-uppercase"><a class="rubik-scribble-regular" style="text-decoration: none; color: white;" href="#">VINMARTECH</a></h5>
+                
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                            aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                            </p>
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="column large-4 w-900-stack usefull-links">
+                            
+                            <ul class="list-unstyled mb-0">
+                                <h5 class="text-uppercase" style="font-weight: bolder;">Liens utiles</h5>
+                            <li>
+                                <a style="color: white;" href="#!" class="">Accueil</a>
+                            </li>
+                            <li>
+                                <a style="color: white;" href="#!" class="">Contact</a>
+                            </li>
+                            <li>
+                                <a style="color: white;" href="#!" class="">A propos</a>
+                            </li>
+                            <li>
+                                <a style="color: white;" href="#!" class="">Notre Team</a>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="column large-4 w-900-stack  address">
+                            <ul>
+                                <h5 class="text-uppercase" style="font-weight: bolder;">Address</h5>
+                                <li>
+                                    <a style="text-decoration: none; color: white;" href="#!" class=""><strong>Guinea - Conakry</strong></a>
+                                </li>                              
+                                <li>
+                                <a style="text-decoration: none; color: white;" href="#!" class="">Commune de Lambanyi</a>
+                                </li>
+                                <li>
+                                <a style="text-decoration: none; color: white;" href="#!" class="">Tel: 611 56 70 24 / 623 04 00 31</a>
+                                </li>
+                                <li>
+                                <a style="text-decoration: none; color: white;" href="#!" class="">Email: info@vinmartech.com</a>
+                                </li>
+                            </ul> 
+                        </div>
+                </div>
+                <div class="row large-12 social-media-icons">
+                    <!-- Section: Social media -->
+                    <section class="text-center">
+                    <!-- Facebook -->
+                        <a
+                            class="btn text-white  m-1"
+                            style="background-color: #3b5998;"
+                            href="#!"
+                            role="button"
+                            ><i class="fab fa-facebook-f"></i
+                        ></a>
+                    
+                        <!-- Twitter -->
+                        <a
+                            class="btn text-white  m-1"
+                            style="background-color: #55acee;"
+                            href="#!"
+                            role="button"
+                            ><i class="fab fa-twitter"></i
+                        ></a>
+                    
+                        <!-- Google -->
+                        <a
+                            class="btn text-white  m-1"
+                            style="background-color: #dd4b39;"
+                            href="#!"
+                            role="button"
+                            ><i class="fab fa-google"></i
+                        ></a>
+                    
+                        <!-- Instagram -->
+                        <a
+                            class="btn text-white  m-1"
+                            style="background-color: #ac2bac;"
+                            href="#!"
+                            role="button"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
+                    
+                        <!-- Linkedin -->
+                        <a
+                            class="btn text-white  m-1"
+                            style="background-color: #0082ca;"
+                            href="#!"
+                            role="button"
+                            ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                        <!-- Github -->
+                        <a
+                            class="btn text-white  m-1"
+                            style="background-color: #333333;"
+                            href="#!"
+                            role="button"
+                            ><i class="fab fa-github"></i
+                        ></a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>                  
+            </div>
+            <!-- Copyright -->
+            <div class="copyright-footer">
+                © 2024 Copyright:
+                <a  style="text-decoration: none; color: white;" href="#!">VINMARTECH - sarlu</a>
+            </div>
+            <!-- Copyright -->
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    top
+                </a>
+            </div> <!-- end ss-go-top -->
+
+        </footer>
+        <!-- Footer -->
+    </section>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'pages/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'pages/js/plugins.js' %}"></script>
+    <script src="{% static 'pages/js/main.js' %}"></script>
+
+</body>
+
+</html>
